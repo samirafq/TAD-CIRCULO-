@@ -9,11 +9,24 @@
 		
 		Circulo* c = circ_cria (4.1, 2.7, 3.2);
 		Ponto* p = pto_cria (2.0,3.4);
-		float a = circ_area (c);		
-		printf("\ndigite a area do circulo:%.2f\n", a);
-		int d = circ_interior(c, p);
-		printf("\ndigite o interior do circulo:%.2d\n", c);
-		pto_libera(p);
+		float a = distancia (c, p);		
+
+	printf("\ndistancia entre os pontos:%.1f\n", a);
+
+		libera(q);
+		libera(c);
+
+		Ponto* p = pto_cria (2.0,3.4);
+
+		Circulo* c = circ_cria (4.1, 2.7, 3.2);
+		float s = circ_area (c);
+
+	printf("\ndigite a area do circulo:%.2d\n", s);
+		cir_interior(p, c);
+
+	printf("\nponto nao esta no circulo\n");
+	
 		circ_libera(c);
 		return 0;
+
 }
